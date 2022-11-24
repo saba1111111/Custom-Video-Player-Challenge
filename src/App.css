@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.video-conteiner {
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.videoStyle {
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.videoMargin {
+  margin-right: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.videos-contoller {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.controller-conteiner {
+  max-width: 690px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.center-elements {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.icons{ 
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.progress {
+  max-width: 700px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.player__slider {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.startPause{ 
+  margin-right: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.option-style {
+  height: 30px;
+  background: rgb(201, 198, 198);
+  border-radius: 5px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 560px) {
+  .startPause {
+    margin-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 490px) {
+  .player__slider {
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .icons{ 
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
   }
 }
